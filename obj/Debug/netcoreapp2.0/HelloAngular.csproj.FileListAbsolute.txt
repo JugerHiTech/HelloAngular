@@ -1,0 +1,10 @@
+D:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngular.deps.json
+D:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngular.runtimeconfig.json
+D:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngular.runtimeconfig.dev.json
+D:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngular.dll
+D:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngular.pdb
+D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.csproj.CoreCompileInputs.cache
+D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.AssemblyInfoInputs.cache
+D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.AssemblyInfo.cs
+D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.dll
+D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.pdb

@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\NG5\\Project\\HelloAngular\\HelloAngular.csproj",
+      "projectUniqueName": "d:\\Dev\\NG5\\Project\\HelloAngular\\HelloAngular.csproj",
       "projectName": "HelloAngular",
-      "projectPath": "D:\\Dev\\NG5\\Project\\HelloAngular\\HelloAngular.csproj",
+      "projectPath": "d:\\Dev\\NG5\\Project\\HelloAngular\\HelloAngular.csproj",
       "packagesPath": "C:\\Users\\edwinliu\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\NG5\\Project\\HelloAngular\\obj\\",
+      "outputPath": "d:\\Dev\\NG5\\Project\\HelloAngular\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
