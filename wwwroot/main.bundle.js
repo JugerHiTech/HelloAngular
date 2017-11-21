@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class='panel-heading'>\n  {{greetings}}\n</h2>\n<hr/>\n"
+module.exports = "<h3 class='panel-heading'>\n  {{greetings}}XXXXFKNSNSD\n</h3>\n<hr/>\n"
 
 /***/ }),
 

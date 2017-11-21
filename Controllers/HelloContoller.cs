@@ -9,7 +9,7 @@ namespace HelloAngular
     [HttpGet]
     public IActionResult Greetings()
     {
-      return Ok("Hello from ASP.NET Core Web API.");
+      return Ok("Hello from ASP.NET Core Web API Judy & Edwin.");
     }
   }
 }
