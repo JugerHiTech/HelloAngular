@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloAngular</name>
+    </assembly>
+    <members>
+        <member name="M:HelloAngular.Controllers.TodoController.Create(HelloAngular.Models.TodoItem)">
+             <summary>
+             Create a Todo Item
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item1",
+                    "isComplete": true
+                 }
+             </remarks>
+             <param name="item"></param>
+             <returns></returns>
+             <response code="201">Returns the newly-created item</response>
+             <response code="400">If the item is null</response>
+        </member>
+        <member name="M:HelloAngular.Models.TodoContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{HelloAngular.Models.TodoContext})">
+            <summary>
+            TodoContext
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:HelloAngular.Models.TodoContext.TodoItems">
+            <summary>
+            TodoItems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Models.TodoItem">
+            <summary>
+            待辦事項 TodoItem
+            </summary>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.Id">
+            <summary>
+            Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.Name">
+            <summary>
+            Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.IsComplete">
+            <summary>
+            IsComplete
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Startup">
+            <summary>
+            Start Up
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:HelloAngular.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:HelloAngular.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

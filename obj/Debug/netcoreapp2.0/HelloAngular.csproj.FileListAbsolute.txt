@@ -8,3 +8,4 @@ D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.AssemblyInf
 D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.AssemblyInfo.cs
 D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.dll
 D:\Dev\NG5\Project\HelloAngular\obj\Debug\netcoreapp2.0\HelloAngular.pdb
+d:\Dev\NG5\Project\HelloAngular\bin\Debug\netcoreapp2.0\HelloAngularWebApi.xml

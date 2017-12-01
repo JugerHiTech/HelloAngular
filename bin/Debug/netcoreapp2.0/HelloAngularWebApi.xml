@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloAngular</name>
+    </assembly>
+    <members>
+        <member name="T:HelloAngular.Biz.SystemDateTime">
+             <summary>
+            
+            
+             </summary>
+        </member>
+        <member name="P:HelloAngular.Biz.SystemDateTime.Now">
+            <summary>
+            Now
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.HelloController">
+            <summary>
+            HelloController
+            </summary>
+        </member>
+        <member name="M:HelloAngular.HelloController.Greetings">
+            <summary>
+            Greetings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Controllers.TodoController">
+            <summary>
+            TodoController
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.#ctor(Microsoft.Extensions.Options.IOptions{HelloAngular.Models.ApplicationDBConnectionSettings},HelloAngular.Models.TodoContext,HelloAngular.Interface.ISystemDateTime)">
+            <summary>
+            TodoController
+            </summary>
+            <param name="dbConnectionSettings"></param>
+            <param name="context"></param>
+            <param name="sysDateTime"></param>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.GetAll">
+            <summary>
+            GetAll
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.GetById(System.Int64)">
+            <summary>
+            GetById
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.Create(HelloAngular.Models.TodoItem)">
+             <summary>
+             Create a Todo Item
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item1",
+                    "isComplete": true
+                 }
+             </remarks>
+             <param name="item"></param>
+             <returns></returns>
+             <response code="201">Returns the newly-created item</response>
+             <response code="400">If the item is null</response>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.Update(System.Int64,HelloAngular.Models.TodoItem)">
+            <summary>
+            Update
+            </summary>
+            <param name="id"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HelloAngular.Controllers.TodoController.Delete(System.Int64)">
+            <summary>
+            Delete
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Interface.ISystemDateTime">
+            <summary>
+            ISystemDateTime
+            </summary>
+        </member>
+        <member name="P:HelloAngular.Interface.ISystemDateTime.Now">
+            <summary>
+            Now
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Models.ApplicationDBConnectionSettings">
+            <summary>
+            ApplicationDBConnectionSettings
+            </summary>
+        </member>
+        <member name="P:HelloAngular.Models.ApplicationDBConnectionSettings.Server">
+            <summary>
+            Server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.ApplicationDBConnectionSettings.DataBase">
+            <summary>
+            DataBase
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.ApplicationDBConnectionSettings.SAType">
+            <summary>
+            SAType
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.ApplicationDBConnectionSettings.SATypeList">
+            <summary>
+            SATypeList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Models.TodoContext">
+            <summary>
+            TodoContext
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Models.TodoContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{HelloAngular.Models.TodoContext})">
+            <summary>
+            TodoContext
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:HelloAngular.Models.TodoContext.TodoItems">
+            <summary>
+            TodoItems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Models.TodoItem">
+            <summary>
+            待辦事項 TodoItem
+            </summary>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.Id">
+            <summary>
+            Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.Name">
+            <summary>
+            Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HelloAngular.Models.TodoItem.IsComplete">
+            <summary>
+            IsComplete
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:HelloAngular.Program.BuildWebHost(System.String[])">
+            <summary>
+            BuildWebHost
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Startup">
+            <summary>
+            Start Up
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:HelloAngular.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HelloAngular.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:HelloAngular.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
