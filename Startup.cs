@@ -45,6 +45,15 @@ namespace HelloAngular
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
+
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
             services.AddMvc();
 
@@ -70,7 +79,13 @@ namespace HelloAngular
 
             // DI
             services.Configure<ApplicationDBConnectionSettings>(Configuration.GetSection("ApplicationDBConnectionSettings"));
+            services.Configure<MongoDBSettings>(Options =>
+            {
+                Options.ConnectionString = Configuration.GetSection("MongoDBConnection:ConnectionString").Value;
+                Options.Database = Configuration.GetSection("MongoDBConnection:Database").Value;
+            });
             services.AddTransient<ISystemDateTime, SystemDateTime>();
+            services.AddTransient<INoteRepository, NoteRepository>();
         }
 
         /// <summary>
@@ -96,6 +111,9 @@ namespace HelloAngular
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // global policy, if assigned here (it could be defined indvidually for each controller)
+            app.UseCors("CorsPolicy");
 
             app.UseMvc();
 

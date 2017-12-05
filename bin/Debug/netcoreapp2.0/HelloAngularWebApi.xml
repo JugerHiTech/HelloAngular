@@ -87,6 +87,11 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:HelloAngular.Interface.INoteRepository">
+            <summary>
+            INoteRepository
+            </summary>
+        </member>
         <member name="T:HelloAngular.Interface.ISystemDateTime">
             <summary>
             ISystemDateTime
@@ -124,6 +129,38 @@
         <member name="P:HelloAngular.Models.ApplicationDBConnectionSettings.SATypeList">
             <summary>
             SATypeList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HelloAngular.Models.MongoDBSettings">
+            <summary>
+            MongoDBSettings
+            </summary>
+        </member>
+        <member name="F:HelloAngular.Models.MongoDBSettings.ConnectionString">
+            <summary>
+            ConnectionString
+            </summary>
+        </member>
+        <member name="F:HelloAngular.Models.MongoDBSettings.Database">
+            <summary>
+            Database
+            </summary>
+        </member>
+        <member name="T:HelloAngular.Models.NoteContext">
+            <summary>
+            NoteContext
+            </summary>
+        </member>
+        <member name="M:HelloAngular.Models.NoteContext.#ctor(Microsoft.Extensions.Options.IOptions{HelloAngular.Models.MongoDBSettings})">
+            <summary>
+            NoteContext
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="P:HelloAngular.Models.NoteContext.Notes">
+            <summary>
+            Notes
             </summary>
             <returns></returns>
         </member>
